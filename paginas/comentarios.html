@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Deja un comentario</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../imagenes/favicon.ico" type="image/x-icon">
+        <style>
+            body {
+                background-image: url(../imagenes/otroDJ.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                padding-top: 5.25%;
+                color: rgba(19, 19, 19, 0.61);
+            }
+        </style>
+    </head>
+  <body>
+    <header class="cabecera">
+      <button onclick="location.href='../actividad.html'">Inicio</button>
+      <button onclick="location.href='canciones.html'">Canciones</button>
+      <button onclick="location.href='sobremi.html'">Sobre mi</button>
+      <button onclick="location.href='contacto.html'">Contacto</button>
+      <button onclick="location.href='comentarios.html'">Comentarios</button>
+    </header>
+    <div style="background-color: #ffffff3e; padding: 20px;">
+        <form action="actividad.html">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido"><br><br>
+            <textarea rows="10" cols="50" name="comentario" placeholder="Escribi aca tu comentario"></textarea><br><br>
+            <input type="submit" value="Enviar" class="boton-link"/>
+            <p>Cuentame que te parece mi trabajo</p>
+          </form>
+    </div>
+  </body>
+</html>
