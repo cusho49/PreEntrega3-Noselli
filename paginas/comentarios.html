@@ -6,15 +6,7 @@
         <title>Deja un comentario</title>
         <link rel="stylesheet" href="../css/style.css">
         <link rel="icon" href="../imagenes/favicon.ico" type="image/x-icon">
-        <style>
-            body {
-                background-image: url(../imagenes/otroDJ.png);
-                background-size: cover;
-                background-repeat: no-repeat;
-                padding-top: 5.25%;
-                color: rgba(19, 19, 19, 0.61);
-            }
-        </style>
+        <body id="comentarios">
     </head>
   <body>
     <header class="cabecera">
@@ -26,13 +18,16 @@
     </header>
     <div style="background-color: #ffffff3e; padding: 20px;">
         <form action="actividad.html">
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre"><br>
-            <label for="apellido">Apellido:</label><br>
-            <input type="text" id="apellido" name="apellido"><br><br>
-            <textarea rows="10" cols="50" name="comentario" placeholder="Escribi aca tu comentario"></textarea><br><br>
-            <input type="submit" value="Enviar" class="boton-link"/>
-            <p>Cuentame que te parece mi trabajo</p>
+          <div class="grid-container">
+            <label for="nombre" class="grid-item">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required class="grid-item"/>
+            <label for="apellido" class="grid-item">Apellido:</label>
+            <input type="email" id="correo" name="correo" required class="grid-item"/>
+            <label for="mensaje" class="grid-item">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="10" cols="100" required class="textarea-item">Escribí tu comentario acá</textarea>
+          <p>Cuentame que te parece mi trabajo</p>
+          <input type="submit" value="Enviar" class="boton-link"/>
+          </div>
           </form>
     </div>
   </body>

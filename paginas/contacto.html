@@ -3,18 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto - DJ Nombre</title>
+    <title>Contactar</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../imagenes/favicon.ico" type="image/x-icon">
-    <style>
-      body {
-        background-image: url(../imagenes/DJ3.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        padding-top: 5.25%;
-        color: white; 
-      }
-    </style>
+    <body id="contacto">
   </head>
   <body>
     <header class="cabecera">
@@ -31,31 +23,18 @@
       <p>¡Gracias por visitar mi sitio! Si estás interesado en contratar mis servicios como DJ, por favor completa el siguiente formulario y te responderé a la brevedad.</p>
 
       <form action="enviar.php" method="POST">
-        <label for="nombre">Nombre:</label>
-        <br>
-        <input type="text" id="nombre" name="nombre" required />
-        <br><br>
-
-        <label for="correo">Correo electrónico:</label>
-        <br>
-        <input type="email" id="correo" name="correo" required />
-        <br><br>
-
-        <label for="telefono">Teléfono:</label>
-        <br>
-        <input type="tel" id="telefono" name="telefono" required />
-        <br><br>
-
-        <label for="fecha">Fecha del evento:</label>
-        <br>
-        <input type="date" id="fecha" name="fecha" required />
-        <br><br>
-
-        <label for="mensaje">Mensaje:</label>
-        <br>
-        <textarea id="mensaje" name="mensaje" rows="10" cols="100" required>Hola! Como estas? Queria consultar sobre...</textarea>
-        <br><br>
-
+        <div class="grid-container">
+          <label for="nombre" class="grid-item">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required class="grid-item"/>
+          <label for="correo" class="grid-item">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" required class="grid-item"/>
+          <label for="telefono" class="grid-item">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required class="grid-item"/>
+          <label for="fecha" class="grid-item">Fecha del evento:</label>
+          <input type="date" id="fecha" name="fecha" required class="grid-item"/>
+          <label for="mensaje" class="grid-item">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="10" cols="100" required class="textarea-item">Hola! Como estas? Queria consultar sobre...</textarea>
+        </div>
         <input type="submit" value="Enviar" class="boton-link"/>
       </form>
 
